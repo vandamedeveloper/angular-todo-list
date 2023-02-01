@@ -1,0 +1,25 @@
+<div class="container container--full --align-items-center --justify-content-center row --flex-direction-column">
+
+    <div class="login">
+        <div class="login__header">
+            <h2 class="login__header__title">Join the community</h2>
+            <h4 class="login__header__subtitle">Fill up the form to create your account.</h4>
+        </div>
+        <div class="login__content">
+            <div class="row --flex-direction-column" [formGroup]="registerForm">
+                <input class="input input--soft-outline" type="text" placeholder="Username" formControlName="username">
+                <input class="input input--soft-outline --m-top-16" type="text" placeholder="Email"
+                    formControlName="email">
+                <input class="input input--soft-outline --m-top-16" type="password" placeholder="Password"
+                    formControlName="password">
+                <input class="input input--soft-outline --m-top-16" type="password" placeholder="Repeat password"
+                    formControlName="repeatPassword">
+                <button class="btn btn--login --m-top-16" (click)="onRegister()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="--m-top-16 login__footer">
+        <span>Do you have an account? <a [routerLink]="['/auth/login']"
+                routerLinkActive="router-link-active">Login</a></span>
+    </div>
+</div>

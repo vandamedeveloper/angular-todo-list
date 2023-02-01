@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="container">
+        <div class="header__main-row">
+            <h1>TODOS APP</h1>
+            <div class="row --align-items-center" *ngIf="user;">
+                <img src="https://cdn.britannica.com/92/215392-050-96A4BC1D/Australian-actor-Chris-Hemsworth-2019.jpg"
+                    class="--m-right-16 avatar" />
+                <h2 class="--m-right-16">{{user?.username}}</h2>
+                <button class="btn -primary" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>

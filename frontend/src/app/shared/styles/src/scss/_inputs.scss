@@ -1,0 +1,12 @@
+.input {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  width: 100%;
+  max-width: 40rem;
+  outline: none;
+  &--soft-outline {
+    border: 1px solid rgba(0, 0, 0, 0.157);
+  }
+}

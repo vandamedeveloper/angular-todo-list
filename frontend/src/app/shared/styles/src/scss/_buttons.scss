@@ -1,0 +1,40 @@
+.btn {
+  background-color: #6f7779;
+  border: 0.1rem solid transparent;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  min-width: 3rem;
+  min-height: 2.6rem;
+  padding: 0.5rem;
+  text-align: center;
+
+  &:focus {
+    outline: 0;
+  }
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  &.-primary {
+    color: #fff;
+    background-color: #ec0000;
+  }
+  &.-success {
+    color: #000;
+    background-color: #34db12;
+  }
+  &.-primary:hover {
+    background-color: #bd0000;
+  }
+  &.-success:hover {
+    color: #fff;
+    background-color: #22950b;
+  }
+  &--login {
+    min-height: 3.5rem;
+    background-color: rgb(20, 96, 188);
+    &:hover {
+      background-color: rgb(23, 53, 87);
+    }
+  }
+}

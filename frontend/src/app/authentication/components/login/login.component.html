@@ -1,0 +1,21 @@
+<div class="container container--full --align-items-center --justify-content-center row --flex-direction-column">
+    <div class="login">
+        <div class="login__header">
+            <h2 class="login__header__title">Welcome Back</h2>
+            <h4 class="login__header__subtitle">Enter your credentials to access your account.</h4>
+        </div>
+        <div class="login__content">
+            <div class="row --flex-direction-column" [formGroup]="loginForm">
+                <input class="input input--soft-outline" type="text" placeholder="Enter your email"
+                    formControlName="email">
+                <input class="input input--soft-outline --m-top-16" type="password" placeholder="Enter your password"
+                    formControlName="password">
+                <button class="btn btn--login --m-top-16" (click)="onLogin()">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <div class="--m-top-16 login__footer">
+        <span>You don't have an account? <a [routerLink]="['/auth/signup']"
+                routerLinkActive="router-link-active">Register</a></span>
+    </div>
+</div>

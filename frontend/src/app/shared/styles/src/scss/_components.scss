@@ -1,0 +1,62 @@
+.divider {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0;
+  height: 0.1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.todos-list-item {
+  padding: 1.5rem 1rem;
+  background-color: #fff;
+  width: 100%;
+  max-width: 80rem;
+  &:not(:first-child) {
+    margin-top: 1.6rem;
+  }
+}
+.btn-actions {
+  a {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.btn-action {
+  width: 1.5rem;
+}
+
+.login {
+  width: 100%;
+  max-width: 40rem;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+    &__title {
+      margin-bottom: 1.2rem;
+    }
+    &__subtitle {
+      color: rgba(0, 0, 0, 0.439);
+      font-size: 1.1rem;
+    }
+  }
+  &__footer {
+    span {
+      color: rgba(0, 0, 0, 0.439);
+      font-size: 1.1rem;
+      a {
+        font-weight: bold;
+        margin-left: 0.2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &__content {
+  }
+}

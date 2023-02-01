@@ -1,0 +1,28 @@
+<section class="todos">
+    <div class="container">
+        <app-todo-create [form]="form" (todoAdded)="addTodo($event)" [fetching]="fetching">
+        </app-todo-create>
+        <div class="--m-top-16" *ngIf=" (todos && todos.length > 0)">
+            <ul class="row --flex-direction-column --align-items-center">
+                <li class="todos-list-item" *ngFor="let todo of todos">
+                    <div class="row --justify-content-space-between --align-items-center">
+                        <h3>{{todo.todo}}</h3>
+                        <div class="btn-actions">
+                            <a (click)="deleteTodo(todo.id)"><img
+                                    src="https://assets.webiconspng.com/uploads/2017/01/Red-Trash-Simple-Icon.png"
+                                    class="btn-action" /></a>
+                            <a (click)="updateTodo(todo.id)"><img
+                                    src="https://www.freeiconspng.com/thumbs/edit-icon-png/edit-editor-pen-pencil-write-icon--4.png"
+                                    class="btn-action" /></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- <ng-template #skeleton>
+    <div class="container" style="position:absolute;top:50%;transform: translateY(-50%);text-align: center;">
+        <h1 style="color:rgb(132, 130, 130);font-size: 2rem;">You do not have any todo yet!</h1>
+    </div>
+</ng-template> -->

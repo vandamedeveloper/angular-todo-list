@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+    <div class="row --justify-content-center">
+        <input formControlName="todo" class="input input--soft-outline" placeholder="Todo" [value]="todo?.todo"><button
+            class="btn btn--login --m-left-10 --w-100" (click)="addTodo()"
+            [disabled]="fetching">{{getButtonText()}}</button>
+    </div>
+</form>
